@@ -36,6 +36,7 @@ body {
   .game-hero-title {
     text-shadow: 2px 2px 2px darkgrey;
     font-size: 50px;
+    font-weight: 600;
   }
 }
 
@@ -62,6 +63,7 @@ body {
   .game-why-title {
     font-size: 50px;
     line-height: 60px;
+    font-weight: 600;
   }
 }
 
@@ -141,10 +143,12 @@ body {
 @media (max-width: 640px) {
   .game-why-name {
     font-size: 18px;
+    font-weight: 600;
   }
 }
 
 .game-why-fact {
+  font-size: 18px;
   line-height: 20px;
 }
 
@@ -179,7 +183,7 @@ body {
 }
 
 .game-what-list {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 25px;
   list-style: disc;
   margin-top: 20px;
@@ -190,8 +194,8 @@ body {
 }
 
 .game-what-text {
-  font-size: 2.5vw;
-  line-height: 5vw;
+  font-size: 2vw;
+  line-height: 3vw;
   font-weight: 300;
   border-radius: 30px;
   border: 5px #0EB9CB solid;
