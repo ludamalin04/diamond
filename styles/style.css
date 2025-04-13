@@ -1,12 +1,17 @@
+@font-face {
+  font-family: "American Typewriter";
+  src: url("../fonts/dehinted-AmericanTypewriter.ttf");
+}
 body {
   font-family: Poppins, sans-serif;
+  color: #003366;
 }
 
 .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #003366;
+  background: #8B1A1A;
   color: #D7C69B;
   padding: 27px 10%;
 }
@@ -83,7 +88,7 @@ body {
     width: 350px;
     height: 270px;
     padding: 50px;
-    background: #003366;
+    background: #8B1A1A;
     z-index: 100;
   }
 }
@@ -120,7 +125,7 @@ body {
     width: 350px;
     height: 150px;
     padding: 0 50px;
-    background: #003366;
+    background: #8B1A1A;
     z-index: 100;
   }
 }
@@ -168,7 +173,7 @@ body {
   display: none;
   width: 26px;
   height: 26px;
-  background: #003366;
+  background: #8B1A1A;
   border: none;
 }
 @media (max-width: 992px) {
@@ -253,7 +258,6 @@ body {
   line-height: 44px;
   font-weight: 300;
   text-align: center;
-  color: #003366;
 }
 @media (max-width: 1500px) {
   .header-bottom p {
@@ -275,7 +279,7 @@ body {
 .header-bottom-btn {
   font-family: Poppins, sans-serif;
   color: #FFFFF0;
-  background: #003366;
+  background: #8B1A1A;
   border: none;
   border-radius: 25px;
   padding: 12px 48px;
@@ -290,6 +294,178 @@ body {
     font-size: 18px;
     line-height: 20px;
   }
+}
+
+.methods {
+  font-family: "American Typewriter", sans-serif;
+  background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("../imgs/methods.png") no-repeat;
+  background-size: 100%;
+  margin-top: 50px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px 10%;
+}
+
+.text-title {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 600;
+  text-align: right;
+  display: flex;
+  justify-self: right;
+  max-width: 70%;
+}
+@media (max-width: 992px) {
+  .text-title {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 640px) {
+  .text-title {
+    font-size: 24px;
+    line-height: 30px;
+    width: 90%;
+    margin-top: 30px;
+  }
+}
+
+.text-subtitle {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
+  padding: 20px;
+  margin-top: 30px;
+}
+@media (max-width: 992px) {
+  .text-subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+}
+
+.text-subtitle:first-letter {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 0 5px;
+  color: #FFFFFF;
+  background: #fe8255;
+  border-radius: 15px;
+}
+
+.methods-list {
+  font-size: 20px;
+  line-height: 25px;
+  list-style: disc;
+  margin-top: 20px;
+}
+
+.methods-list li {
+  margin-top: 15px;
+}
+
+.text-frame {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 300;
+  border-radius: 30px;
+  border: 2px #0EB9CB solid;
+  padding: 20px;
+  margin-top: 30px;
+}
+@media (max-width: 992px) {
+  .text-frame {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.methods-content {
+  padding: 30px 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .methods-content {
+    gap: 30px;
+  }
+}
+@media (max-width: 640px) {
+  .methods-content {
+    padding: 50px 0 50px;
+    gap: 30px;
+  }
+}
+
+.methods-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  border: 2px #0EB9CB solid;
+  padding: 40px 20px;
+  width: 20%;
+}
+@media (max-width: 992px) {
+  .methods-item {
+    width: 45%;
+  }
+}
+@media (max-width: 640px) {
+  .methods-item {
+    width: 320px;
+  }
+}
+
+.methods-icon {
+  position: absolute;
+  top: -15px;
+  right: 30px;
+  background: white;
+  width: 50px;
+  padding: 0 5px;
+}
+
+.methods-fact {
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.city {
+  background-image: linear-gradient(rgba(139, 26, 26, 0.2), rgba(139, 26, 26, 0.2)), url("../imgs/city.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 100px 0;
+}
+
+.city-container {
+  font-family: "American Typewriter", sans-serif;
+  width: 100%;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  padding: 0 10%;
+  color: #ffffff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.city .text-subtitle {
+  font-weight: 500;
+}
+
+.grey {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("../imgs/diamond.png");
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "American Typewriter", sans-serif;
 }
 
 .about_us {
@@ -322,7 +498,7 @@ body {
   justify-content: center;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 30px;
-  border: 5px #fe8255 solid;
+  border: 5px #0EB9CB solid;
   padding: 20px;
   width: 30%;
 }
@@ -339,7 +515,7 @@ body {
 
 .about_us-counter {
   font-size: 48px;
-  color: #003366;
+  color: #8B1A1A;
 }
 @media (max-width: 992px) {
   .about_us-counter {
@@ -355,7 +531,6 @@ body {
 .about_us-fact {
   font-size: 40px;
   text-align: center;
-  color: #003366;
   margin-top: 30px;
 }
 @media (max-width: 992px) {
@@ -373,7 +548,7 @@ body {
 .contact {
   display: flex;
   margin-top: -3px;
-  background: #003366;
+  background: #8B1A1A;
   position: relative;
 }
 
@@ -450,7 +625,7 @@ body {
   width: 160px;
   height: 50px;
   background: #D7C69B;
-  color: #373D3F;
+  color: #003366;
   border: none;
   border-radius: 25px;
   font-size: 18px;
@@ -680,7 +855,7 @@ body {
   font-size: 60px;
   font-weight: 700;
   line-height: 99px;
-  color: #003366;
+  color: #8B1A1A;
   text-align: center;
 }
 @media (max-width: 992px) {
@@ -705,7 +880,7 @@ body {
   font-size: 52px;
   font-weight: 700;
   line-height: 60px;
-  color: #003366;
+  color: #8B1A1A;
 }
 @media (max-width: 992px) {
   .swiper-line {
@@ -730,7 +905,7 @@ body {
   font-size: 42px;
   font-weight: 700;
   line-height: 60px;
-  color: #003366;
+  color: #8B1A1A;
 }
 @media (max-width: 992px) {
   .swiper-line_game {
@@ -750,7 +925,7 @@ body {
   font-family: Poppins, sans-serif;
   color: #FFFFFF;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  background: #fe8255;
+  background: #0EB9CB;
   border: none;
   border-radius: 25px;
   padding: 12px 20px;
@@ -783,15 +958,15 @@ body {
 }
 
 .swiper-button-next:after {
-  color: #003366;
+  color: #8B1A1A;
 }
 
 .swiper-button-prev:after {
-  color: #003366;
+  color: #8B1A1A;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-  background-color: #003366;
+  background-color: #8B1A1A;
 }
 
 footer {
@@ -804,7 +979,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
-  color: #003366;
+  color: #8B1A1A;
 }
 @media (max-width: 1050px) {
   .footer {
@@ -890,7 +1065,7 @@ footer {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
-  color: #003366;
+  color: #8B1A1A;
   border-top: 1px solid #003366;
   padding: 20px;
   text-align: center;
