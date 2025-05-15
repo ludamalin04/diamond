@@ -1,109 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-  <title>DiamonDIsland</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/reset.css">
-  <link rel="stylesheet" href="styles/style-game.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>DiamonDIsland</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style-game.css">
 </head>
 <body>
 <header>
-  <div class="game-hero">
-    <img src="imgs/hero_game.png" alt="self">
-    <h1 class="game-hero-title">всі відповіді</h1>
-    <a href="./index.html" class="home"><img src="imgs/home.png" alt="home"></a>
-  </div>
+    <section class="header-top" id="home">
+        <div class="header-title">
+            <img src="imgs/logo.png" alt="logo">
+            <h2 class="game-title">DiamonD IslanD</h2>
+        </div>
+        <ul class="game-list">
+            <li class="header-item"><a href="#why">Концепція</a></li>
+            <li class="header-item"><a href="#faq">питання</a></li>
+            <li class="header-item"><a href="#price">вартість</a></li>
+            <li class="header-item"><a href="./index.html">школа</a></li>
+        </ul>
+        <div class="game-action">
+            <a class="header-call" href="tel:+380678318508">
+                <img src="imgs/call.png" alt="call">
+                <p>Подзвони сьогодні! <br>+380678318508</p>
+            </a>
+        </div>
+        <button class="header-burger">
+            <span class="header-line"></span>
+        </button>
+    </section>
+    <div class="game-hero">
+        <img src="imgs/hero_game.png" alt="self">
+        <h1 class="game-hero-title">всі відповіді</h1>
+        <a href="./index.html" class="home"><img src="imgs/home.png" alt="home"></a>
+    </div>
 </header>
 <main>
-  <section class="game-why">
-    <h2 class="game-big-title">потрібні лише <span>вірні</span> питання</h2>
-    <div class="container">
-      <h3 class="text-title">Чому трансформаційна гра DiamonD IslanD сильніша за просто фінансові
-        ігри?</h3>
-      <div class="game-why-content">
-        <div class="game-why-item">
-          <h3 class="game-why-name">мислення</h3>
-          <p class="game-why-fact">Бо гроші – це лише вершина айсберга.
-            Ваші фінанси безпосередньо залежать від вашого мислення, емоційного стану та оточення.</p>
+    <section class="game-why">
+        <h2 class="game-big-title">потрібні лише <span>вірні</span> питання</h2>
+        <div class="container">
+            <h3 class="text-title" id="why">Чому трансформаційна гра DiamonD IslanD сильніша за просто фінансові
+                ігри?</h3>
+            <div class="game-why-content">
+                <div class="game-why-item">
+                    <h3 class="game-why-name">мислення</h3>
+                    <p class="game-why-fact">Бо гроші – це лише вершина айсберга.
+                        Твої фінанси безпосередньо залежать від твого мислення, емоційного стану та оточення.</p>
+                </div>
+                <div class="game-why-item">
+                    <h3 class="game-why-name">впевненість</h3>
+                    <p class="game-why-fact">Бо неможливо прокачати фінанси, якщо особисте життя – у хаосі.
+                        Гроші приходять до тих, хто знає, чого хоче і діє впевнено. Але як рухатися вперед, якщо тебе
+                        гальмують страхи, сумніви чи токсичні відносини?</p>
+                </div>
+                <div class="game-why-item">
+                    <h3 class="game-why-name">без обмежень</h3>
+                    <p class="game-why-fact">Бо рівень доходу зростає разом із рівнем мислення.
+                        Якщо всередині є обмеження, навіть великі гроші швидко зникнуть. Якщо змінюється твоя стратегія
+                        – змінюється і фінансовий результат.</p>
+                </div>
+                <div class="game-why-item">
+                    <h3 class="game-why-name">розуміння</h3>
+                    <p class="game-why-fact">Бо успіх – це не просто знання бізнес-схем, а розуміння себе.
+                        DiamonD IslanD дає не лише фінансові інсайти, а й допомагає глибше зрозуміти, що саме варто
+                        змінити у твоєму житті.</p>
+                </div>
+                <div class="game-why-item">
+                    <h3 class="game-why-name">можливості</h3>
+                    <p class="game-why-fact"> Бо фінансова свобода неможлива без особистісної свободи.
+                        Гра вчить не просто заробляти більше, а бачити можливості, брати відповідальність за своє життя
+                        та створювати бажану реальність.</p>
+                </div>
+                <div class="game-why-item">
+                    <h3 class="game-why-name">гармонія</h3>
+                    <p class="game-why-fact">Бо гроші, відносини та особистий ріст – це три діаманти, що працюють разом.
+                        Змінивши один аспект – ти впливаєш на всі інші. DiamonD IslanD допомагає гармонійно розвивати
+                        всі сфери життя, а не фокусуватися лише на фінансах.</p>
+                </div>
+            </div>
         </div>
-        <div class="game-why-item">
-          <h3 class="game-why-name">впевненість</h3>
-          <p class="game-why-fact">Бо неможливо прокачати фінанси, якщо особисте життя – у хаосі.
-            Гроші приходять до тих, хто знає, чого хоче і діє впевнено. Але як рухатися вперед, якщо вас
-            гальмують страхи, сумніви чи токсичні відносини?</p>
-        </div>
-        <div class="game-why-item">
-          <h3 class="game-why-name">без обмежень</h3>
-          <p class="game-why-fact">Бо рівень доходу зростає разом із рівнем мислення.
-            Якщо всередині є обмеження, навіть великі гроші швидко зникнуть. Якщо змінюється ваша стратегія
-            – змінюється і фінансовий результат.</p>
-        </div>
-        <div class="game-why-item">
-          <h3 class="game-why-name">розуміння</h3>
-          <p class="game-why-fact">Бо успіх – це не просто знання бізнес-схем, а розуміння себе.
-            DiamonD IslanD дає не лише фінансові інсайти, а й допомагає глибше зрозуміти, що саме варто
-            змінити у вашому житті.</p>
-        </div>
-        <div class="game-why-item">
-          <h3 class="game-why-name">можливості</h3>
-          <p class="game-why-fact"> Бо фінансова свобода неможлива без особистісної свободи.
-            Гра вчить не просто заробляти більше, а бачити можливості, брати відповідальність за своє життя
-            та створювати бажану реальність.</p>
-        </div>
-        <div class="game-why-item">
-          <h3 class="game-why-name">гармонія</h3>
-          <p class="game-why-fact">Бо гроші, відносини та особистий ріст – це три діаманти, що працюють разом.
-            Змінивши один аспект – ви впливаєте на всі інші. DiamonD IslanD допомагає гармонійно розвивати
-            всі сфери життя, а не фокусуватися лише на фінансах.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="game-what">
-    <div class="container">
-      <h3 class="text-title">Що ви отримаєте у грі?</h3>
-      <div class="game-what-content">
-        <div class="game-what-item">
-          <h3 class="text-subtitle">Фінанси:</h3>
-          <ul class="game-what-list">
-            <li>Виявите переконання, що блокують ваш дохід.</li>
-            <li>Дізнаєтеся, як створити пасивний дохід та почати заробляти легше і більше.</li>
-            <li>Переведете фокус із “де взяти гроші” на “як їх примножити”.</li>
-          </ul>
-        </div>
-        <div class="game-what-item">
-          <h3 class="text-subtitle">Особистісне зростання:</h3>
-          <ul class="game-what-list">
-            <li>Отримаєте глибокі інсайти про свої сильні сторони та як їх використовувати.</li>
-            <li>Усвідомите, які установки гальмують ваш розвиток.</li>
-            <li>Зрозумієте, які звички та рішення можуть змінити ваше майбутнє вже зараз.</li>
-          </ul>
-        </div>
-        <div class="game-what-item">
-          <h3 class="text-subtitle">Відносини (особисті, дружні, ділові):</h3>
-          <ul class="game-what-list">
-            <li>Розкриєте фактори, що впливають на ваші стосунки, та знайдете способи їх покращити.</li>
-            <li>Визначите, які люди допомагають вам рости, а які гальмують ваш розвиток.</li>
-            <li>Навчитеся будувати сильні партнерства в бізнесі та житті.</li>
-          </ul>
-        </div>
-      </div>
-      <h2 class="text-frame"> Чим більше разів ви граєте, тим швидше ваше життя оновлюється до версії 2.0!<br>Кожна
-        нова гра — це менше “де взяти гроші?” і більше “ага, ось де вони ховаються!”, менше хаосу у стосунках і
-        більше ясності, менше сумнівів і більше дій.</h2>
-    </div>
-  </section>
-</main>
+    </section>
 
+    <section class="game-price" id="price">
+        <div class="price-container">
+            <h3 class="price-title">Готова зазирнути вглиб себе?</h3>
+            <p class="price-subtitle">Обери карту — і дозволь собі побачити більше.
+                Ця гра не про ворожіння, а про внутрішню мудрість, яка вже є в тобі.
+                Дозволь образам говорити, а собі — слухати.</p>
+            <h4 class="price-tag">Вартість участі — 1000 грн</h4>
+            <p class="price-subtitle">Один сеанс, що може змінити погляд на ситуацію або навіть на себе.</p>
+        </div>
+    </section>
+    <!--    <section class="swiper-container">-->
+    <!--        <div class="swiper swiper3">-->
+    <!--            <div class="swiper-wrapper">-->
+    <!--                <div class="swiper-slide"><img src="imgs/cards/card2.jpg" alt="slide"></div>-->
+    <!--                <div class="swiper-slide"><img src="imgs/cards/card3.jpg" alt="slide"></div>-->
+    <!--                <div class="swiper-slide"><img src="imgs/cards/card4.jpg" alt="slide"></div>-->
+    <!--                <div class="swiper-slide"><img src="imgs/cards/card5.jpg" alt="slide"></div>-->
+    <!--                <div class="swiper-slide"><img src="imgs/cards/card6.jpg" alt="slide"></div>-->
+    <!--                <div class="swiper-slide"><img src="imgs/cards/card7.jpg" alt="slide"></div>-->
+    <!--                <div class="swiper-slide"><img src="imgs/cards/card8.jpg" alt="slide"></div>-->
+    <!--                <div class="swiper-slide"><img src="imgs/cards/card9.jpg" alt="slide"></div>-->
+    <!--                <div class="swiper-slide"><img src="imgs/cards/card10.jpg" alt="slide"></div>-->
+    <!--            </div>-->
+    <!--            <div class="swiper-content">-->
+    <!--                <p class="swiper-text">Якщо ви бажаєте стати частиною нашої спільноти, розвиватися у вибраному виді-->
+    <!--                    спорту-->
+    <!--                    та-->
+    <!--                    досягати нових висот, запрошуємо вас приєднатися до Криворізької федерації самбо, дзюдо, сумо та-->
+    <!--                    бойового-->
+    <!--                    самбо. Ви зможете досягти більшого!<br><br>Разом ми зробимо ці види спорту ще більш популярними та-->
+    <!--                    успішними в нашому регіоні!</p>-->
+    <!--            </div>-->
+    <!--            <div class="swiper-pagination"></div>-->
+    <!--        </div>-->
+    <!--    </section>-->
+    <section class="game-what">
+        <div class="container">
+            <h3 class="text-title">Що ти отримаєш у грі?</h3>
+            <div class="game-what-content">
+                <div class="game-what-item">
+                    <h3 class="text-subtitle">Фінанси:</h3>
+                    <ul class="game-what-list">
+                        <li>Виявиш переконання, що блокують твій дохід.</li>
+                        <li>Дізнаєшся як створити пасивний дохід та почати заробляти легше і більше.</li>
+                        <li>Переведеш фокус із “де взяти гроші” на “як їх примножити”.</li>
+                    </ul>
+                </div>
+                <div class="game-what-item">
+                    <h3 class="text-subtitle">Особистісне зростання:</h3>
+                    <ul class="game-what-list">
+                        <li>Отримаєш глибокі інсайти про свої сильні сторони та як їх використовувати.</li>
+                        <li>Усвідомиш які установки гальмують твій розвиток.</li>
+                        <li>Зрозумієш які звички та рішення можуть змінити твоє майбутнє вже зараз.</li>
+                    </ul>
+                </div>
+                <div class="game-what-item">
+                    <h3 class="text-subtitle">Відносини (особисті, дружні, ділові):</h3>
+                    <ul class="game-what-list">
+                        <li>Розкриєш фактори, що впливають на твої стосунки, та знайдеш способи їх покращити.</li>
+                        <li>Визначиш які люди допомагають тобі рости, а які гальмують твій розвиток.</li>
+                        <li>Навчишся будувати сильні партнерства в бізнесі та житті.</li>
+                    </ul>
+                </div>
+            </div>
+            <h2 class="text-frame"> Чим більше разів ти граєш, тим швидше твоє життя оновлюється до версії 2.0!<br>Кожна
+                нова гра — це менше “де взяти гроші?” і більше “ага, ось де вони ховаються!”, менше хаосу у стосунках і
+                більше ясності, менше сумнівів і більше дій.</h2>
+        </div>
+    </section>
+    <section class="faq" id="faq">
+        <div class="faq-container">
+            <div class="faq-items">
+                <div class="faq-item">
+                    <p class="faq-question active" data-tab="#tab-1">Це щось на кшталт ворожіння?</p>
+                    <p class="faq-answer" id="tab-1">Ні. Це психологічний інструмент для саморефлексії. Карти не
+                        передбачають
+                        майбутнє, вони допомагають краще зрозуміти себе.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question" data-tab="#tab-2">Я не вмію “аналізувати себе”. Це підійде мені?</p>
+                    <p class="faq-answer" id="tab-2">Так. Ведуча допоможе поставити правильні запитання. Інсайти
+                        приходять
+                        природно, навіть якщо ви не маєте досвіду.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question" data-tab="#tab-3">Що, якщо я витягну "неправильну" карту?</p>
+                    <p class="faq-answer" id="tab-3">Такого не буває. Кожна карта — це відображення внутрішніх процесів
+                        саме в
+                        цей момент.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question" data-tab="#tab-4">Скільки триває гра?</p>
+                    <p class="faq-answer" id="tab-4">Зазвичай гра триває 1.5-2 години.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question" data-tab="#tab-5">Це гра тільки для жінок?</p>
+                    <p class="faq-answer" id="tab-5">Ні. Вона підходить усім, хто хоче краще розуміти себе, свої
+                        реакції,
+                        бажання та блоки.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question" data-tab="#tab-6">Скільки разів можна або треба грати в трансформаційну
+                        гру?</p>
+                    <p class="faq-answer" id="tab-6">Трансформаційну гру можна проходити стільки разів, скільки виникає
+                        внутрішній запит.
+                        Кожна гра — це новий досвід, інший фокус, нове питання чи ситуація.</p>
+                </div>
+            </div>
+            <div class="faq-img"></div>
+        </div>
+    </section>
+    <section style="height: 200px"></section>
+</main>
+<script src="js/game.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
 </body>
 </html>

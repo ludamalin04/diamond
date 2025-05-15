@@ -68,7 +68,10 @@ burger.addEventListener('click', () => {
     burger.classList.toggle('active');
     list.classList.toggle('visible');
     action.classList.toggle('visible');
+    console.log('hellomain')
 })
+
+
 
 function send() {
     let formData = new FormData(form);

@@ -1,15 +1,15 @@
-$main-color: #8B1A1A;
+//$main-color: #8B1A1A;
 //$main-color: #0099cc;
 //$main-color: #1c4a47;
-//$main-color: #003366;
+$main-color: #003366;
 
 $second-color: #D7C69B;
 //$second-color: #E6D0A0;
 //$second-color: #fdf6ec;
 //$second-color: #E4B74A;
-$accent-color: #0EB9CB;
+//$accent-color: #0EB9CB;
 $soft-color: #FDF6EC;
-//$accent-color: #fe8255;
+$accent-color: #fe8255;
 //$accent-color: #66cccc;
 //$dark-color: #373D3F;
 $dark-color: #003366;
@@ -29,8 +29,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: $main-color;
-  color: $second-color;
+  //background: $main-color;
+  background: $soft-color;
+  //color: $second-color;
+  color: $main-color;
   padding: 27px 10%;
 
   @media (max-width: 1500px) {
@@ -97,7 +99,7 @@ body {
     width: 350px;
     height: 270px;
     padding: 50px;
-    background: $main-color;
+    background: $soft-color;
     z-index: 100;
   }
 
@@ -129,7 +131,7 @@ body {
     width: 350px;
     height: 150px;
     padding: 0 50px;
-    background: $main-color;
+    background: $soft-color;
     z-index: 100;
   }
   @media (max-width: 500px) {
@@ -163,8 +165,9 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 25px;
-  color: $dark-color;
-  background: $second-color;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  background: $accent-color;
   border: none;
   border-radius: 25px;
   padding: 8px 24px;
@@ -175,7 +178,7 @@ body {
   display: none;
   width: 26px;
   height: 26px;
-  background: $main-color;
+  background: $soft-color;
   border: none;
   @media (max-width: 992px) {
     display: flex;
@@ -188,7 +191,7 @@ body {
       position: absolute;
       height: 3px;
       width: 26px;
-      background: $second-color;
+      background: $main-color;
       top: 3px;
       right: 0;
       transition: 0.3s;
@@ -198,7 +201,7 @@ body {
       position: absolute;
       height: 3px;
       width: 26px;
-      background: $second-color;
+      background: $main-color;
       bottom: 3px;
       transition: 0.3s;
     }
@@ -208,7 +211,7 @@ body {
 .header-line {
   height: 3px;
   width: 26px;
-  background: $second-color;
+  background: $main-color;
   transform: scale(1);
 }
 

@@ -7,6 +7,213 @@ body {
   color: #373D3F;
 }
 
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FDF6EC;
+  color: #8B1A1A;
+  padding: 27px 10%;
+}
+@media (max-width: 1500px) {
+  .header-top {
+    flex-wrap: wrap;
+    padding: 27px 8%;
+  }
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-title img {
+  width: 80px;
+  border: 5px solid #fdc015;
+  border-radius: 50%;
+}
+@media (max-width: 1500px) {
+  .header-title img {
+    width: 65px;
+  }
+}
+
+.header-title h2 {
+  font-size: 28px;
+  line-height: 38px;
+  text-transform: capitalize;
+}
+@media (max-width: 1500px) {
+  .header-title h2 {
+    order: 1;
+    font-size: 25px;
+  }
+}
+@media (max-width: 500px) {
+  .header-title h2 {
+    font-size: 22px;
+    width: 200px;
+  }
+}
+
+.game-list {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  max-width: 572px;
+  width: 44%;
+}
+@media (max-width: 1500px) {
+  .game-list {
+    font-size: 16px;
+    order: 3;
+    width: 70%;
+    margin: 20px auto 0;
+  }
+}
+@media (max-width: 992px) {
+  .game-list {
+    flex-direction: column;
+    justify-content: start;
+    gap: 24px;
+    position: absolute;
+    visibility: hidden;
+    top: 70px;
+    right: 0;
+    width: 350px;
+    height: 270px;
+    padding: 50px;
+    background: #FDF6EC;
+    z-index: 100;
+  }
+}
+@media (max-width: 500px) {
+  .game-list {
+    top: 100px;
+    width: 100%;
+  }
+}
+
+.header-item {
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+.game-action {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+@media (max-width: 1500px) {
+  .game-action {
+    order: 2;
+  }
+}
+@media (max-width: 992px) {
+  .game-action {
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    visibility: hidden;
+    top: 340px;
+    right: 0;
+    width: 350px;
+    height: 150px;
+    padding: 0 50px;
+    background: #FDF6EC;
+    z-index: 100;
+  }
+}
+@media (max-width: 500px) {
+  .game-action {
+    top: 370px;
+    width: 100%;
+  }
+}
+
+.visible {
+  visibility: visible;
+  transition: 0.3s;
+}
+
+.header-call {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-call img {
+  height: 50px;
+  width: 50px;
+}
+
+.header-call p {
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.header-burger {
+  display: none;
+  width: 26px;
+  height: 26px;
+  background: #FDF6EC;
+  border: none;
+}
+@media (max-width: 992px) {
+  .header-burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    order: 3;
+  }
+  .header-burger:before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 26px;
+    background: #8B1A1A;
+    top: 3px;
+    right: 0;
+    transition: 0.3s;
+  }
+  .header-burger:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 26px;
+    background: #8B1A1A;
+    bottom: 3px;
+    transition: 0.3s;
+  }
+}
+
+.header-line {
+  height: 3px;
+  width: 26px;
+  background: #8B1A1A;
+  transform: scale(1);
+}
+
+.header-burger.active .header-line {
+  transform: scale(0);
+}
+
+.header-burger.active:before {
+  width: 26px;
+  top: 44%;
+  transform: rotate(-45deg);
+}
+
+.header-burger.active:after {
+  bottom: 45%;
+  transform: rotate(45deg);
+}
+
 .game-hero {
   position: relative;
   overflow: hidden;
@@ -172,6 +379,76 @@ body {
   line-height: 20px;
 }
 
+.game-price {
+  background-image: url("../imgs/sea.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  padding: 100px 0;
+  margin-bottom: 50px;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 10%;
+}
+
+.price-title {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 50px;
+}
+@media (max-width: 992px) {
+  .price-title {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+@media (max-width: 640px) {
+  .price-title {
+    font-size: 24px;
+    line-height: 30px;
+    width: 90%;
+    margin-top: 30px;
+  }
+}
+
+.price-subtitle {
+  font-size: 26px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+@media (max-width: 992px) {
+  .price-subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 20px;
+  }
+}
+
+.price-tag {
+  background: #ffffff;
+  border-radius: 30px;
+  color: #373D3F;
+  font-size: 26px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-shadow: none;
+  padding: 20px;
+  margin-top: 30px;
+}
+
 .game-what {
   background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("../imgs/island.png") no-repeat;
   background-size: 100%;
@@ -242,6 +519,130 @@ body {
   .text-frame {
     font-size: 18px;
     line-height: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .faq {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../imgs/cards/card1.jpg") center;
+    background-size: cover;
+  }
+}
+
+.faq-container {
+  max-width: 2000px;
+  padding: 50px 0 0 10%;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+@media (min-width: 2000px) {
+  .faq-container {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 992px) {
+  .faq-container {
+    padding: 50px 0 0 5%;
+  }
+}
+@media (max-width: 700px) {
+  .faq-container {
+    padding: 50px 10%;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+  }
+}
+
+.faq-items {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-top: 30px;
+}
+@media (max-width: 700px) {
+  .faq-items {
+    width: 100%;
+  }
+}
+
+.faq-item {
+  position: relative;
+}
+
+.faq-item:after {
+  content: "";
+  width: 90%;
+  height: 1px;
+  background: #0EB9CB;
+  position: absolute;
+  bottom: -30px;
+}
+@media (max-width: 700px) {
+  .faq-item:after {
+    width: 100%;
+    background: #ffffff;
+    height: 2px;
+  }
+}
+
+.faq-question {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+}
+@media (max-width: 992px) {
+  .faq-question {
+    font-size: 18px;
+  }
+}
+@media (max-width: 700px) {
+  .faq-question {
+    color: #000000;
+  }
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-in-out;
+}
+
+.active-answer {
+  max-height: 500px;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 10px;
+  color: #5A6163;
+}
+@media (max-width: 992px) {
+  .active-answer {
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .active-answer {
+    color: #000000;
+  }
+}
+
+.faq-img {
+  display: block;
+  width: 50%;
+  height: 600px;
+  background: url("../imgs/cards/card1.jpg") center;
+  background-size: cover;
+  transition: background-size 0.5s ease-in-out;
+}
+@media (max-width: 992px) {
+  .faq-img {
+    height: 700px;
+  }
+}
+@media (max-width: 700px) {
+  .faq-img {
+    display: none;
   }
 }
 

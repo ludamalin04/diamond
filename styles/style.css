@@ -11,8 +11,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #8B1A1A;
-  color: #D7C69B;
+  background: #FDF6EC;
+  color: #003366;
   padding: 27px 10%;
 }
 @media (max-width: 1500px) {
@@ -88,7 +88,7 @@ body {
     width: 350px;
     height: 270px;
     padding: 50px;
-    background: #8B1A1A;
+    background: #FDF6EC;
     z-index: 100;
   }
 }
@@ -125,7 +125,7 @@ body {
     width: 350px;
     height: 150px;
     padding: 0 50px;
-    background: #8B1A1A;
+    background: #FDF6EC;
     z-index: 100;
   }
 }
@@ -161,8 +161,9 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 25px;
-  color: #003366;
-  background: #D7C69B;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  background: #fe8255;
   border: none;
   border-radius: 25px;
   padding: 8px 24px;
@@ -173,7 +174,7 @@ body {
   display: none;
   width: 26px;
   height: 26px;
-  background: #8B1A1A;
+  background: #FDF6EC;
   border: none;
 }
 @media (max-width: 992px) {
@@ -189,7 +190,7 @@ body {
     position: absolute;
     height: 3px;
     width: 26px;
-    background: #D7C69B;
+    background: #003366;
     top: 3px;
     right: 0;
     transition: 0.3s;
@@ -199,7 +200,7 @@ body {
     position: absolute;
     height: 3px;
     width: 26px;
-    background: #D7C69B;
+    background: #003366;
     bottom: 3px;
     transition: 0.3s;
   }
@@ -208,7 +209,7 @@ body {
 .header-line {
   height: 3px;
   width: 26px;
-  background: #D7C69B;
+  background: #003366;
   transform: scale(1);
 }
 
@@ -279,7 +280,7 @@ body {
 .header-bottom-btn {
   font-family: Poppins, sans-serif;
   color: #FFFFF0;
-  background: #8B1A1A;
+  background: #003366;
   border: none;
   border-radius: 25px;
   padding: 12px 48px;
@@ -373,7 +374,7 @@ body {
   line-height: 32px;
   font-weight: 300;
   border-radius: 30px;
-  border: 2px #0EB9CB solid;
+  border: 2px #fe8255 solid;
   padding: 20px;
   margin-top: 30px;
 }
@@ -409,7 +410,7 @@ body {
   display: flex;
   align-items: center;
   border-radius: 30px;
-  border: 2px #0EB9CB solid;
+  border: 2px #fe8255 solid;
   padding: 40px 20px;
   width: 20%;
 }
@@ -498,7 +499,7 @@ body {
   justify-content: center;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 30px;
-  border: 5px #0EB9CB solid;
+  border: 5px #fe8255 solid;
   padding: 20px;
   width: 30%;
 }
@@ -515,7 +516,7 @@ body {
 
 .about_us-counter {
   font-size: 48px;
-  color: #8B1A1A;
+  color: #003366;
 }
 @media (max-width: 992px) {
   .about_us-counter {
@@ -548,7 +549,7 @@ body {
 .contact {
   display: flex;
   margin-top: -3px;
-  background: #8B1A1A;
+  background: #003366;
   position: relative;
 }
 
@@ -855,7 +856,7 @@ body {
   font-size: 60px;
   font-weight: 700;
   line-height: 99px;
-  color: #8B1A1A;
+  color: #003366;
   text-align: center;
 }
 @media (max-width: 992px) {
@@ -880,7 +881,7 @@ body {
   font-size: 52px;
   font-weight: 700;
   line-height: 60px;
-  color: #8B1A1A;
+  color: #003366;
 }
 @media (max-width: 992px) {
   .swiper-line {
@@ -905,7 +906,7 @@ body {
   font-size: 42px;
   font-weight: 700;
   line-height: 60px;
-  color: #8B1A1A;
+  color: #003366;
 }
 @media (max-width: 992px) {
   .swiper-line_game {
@@ -925,7 +926,7 @@ body {
   font-family: Poppins, sans-serif;
   color: #FFFFFF;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  background: #0EB9CB;
+  background: #fe8255;
   border: none;
   border-radius: 25px;
   padding: 12px 20px;
@@ -958,15 +959,15 @@ body {
 }
 
 .swiper-button-next:after {
-  color: #8B1A1A;
+  color: #003366;
 }
 
 .swiper-button-prev:after {
-  color: #8B1A1A;
+  color: #003366;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
-  background-color: #8B1A1A;
+  background-color: #003366;
 }
 
 footer {
@@ -979,7 +980,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
-  color: #8B1A1A;
+  color: #003366;
 }
 @media (max-width: 1050px) {
   .footer {
@@ -1065,7 +1066,7 @@ footer {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
-  color: #8B1A1A;
+  color: #003366;
   border-top: 1px solid #003366;
   padding: 20px;
   text-align: center;
