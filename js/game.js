@@ -1,8 +1,8 @@
 'use strict';
 
 const gameBurger = document.querySelector('.header-burger');
-const gameList = document.querySelector('.game-list');
-const gameAction = document.querySelector('.game-action');
+const gameList = document.querySelector('.header-list');
+const gameAction = document.querySelector('.header-action');
 
 gameBurger.addEventListener('click', () => {
     gameBurger.classList.toggle('active');

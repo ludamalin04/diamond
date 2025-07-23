@@ -22,19 +22,15 @@ $dark-color: #003366;
 body {
   font-family: Poppins, sans-serif;
   color: $dark-color;
-  //scroll-behavior: smooth;
 }
 
 .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  //background: $main-color;
   background: $soft-color;
-  //color: $second-color;
   color: $main-color;
   padding: 27px 10%;
-
   @media (max-width: 1500px) {
     flex-wrap: wrap;
     padding: 27px 8%;
@@ -49,7 +45,7 @@ body {
 
 .header-title img {
   width: 80px;
-  border: 5px solid #fdc015;
+  border: 5px solid $second-color;
   border-radius: 50%;
   @media (max-width: 1500px) {
     width: 65px;
@@ -102,7 +98,6 @@ body {
     background: $soft-color;
     z-index: 100;
   }
-
   @media (max-width: 500px) {
     top: 100px;
     width: 100%;
@@ -112,6 +107,13 @@ body {
 .header-item {
   padding: 0 10px;
   white-space: nowrap;
+  transition-duration: 0.5s;
+}
+
+.header-item:hover {
+  color: $accent-color;
+  text-decoration: underline;
+
 }
 
 .header-action {
@@ -154,6 +156,8 @@ body {
 .header-call img {
   height: 50px;
   width: 50px;
+  border-radius: 50%;
+  border: 5px solid $second-color;
 }
 
 .header-call p {
@@ -172,6 +176,11 @@ body {
   border-radius: 25px;
   padding: 8px 24px;
   white-space: nowrap;
+  transition-duration: 0.5s;
+}
+
+.header-book a:hover {
+  background: $main-color;
 }
 
 .header-burger {
@@ -279,10 +288,15 @@ body {
   line-height: 33px;
   text-transform: uppercase;
   text-align: center;
+  transition-duration: 0.5s;
   @media (max-width: 500px) {
     font-size: 18px;
     line-height: 20px;
   }
+}
+
+.header-bottom-btn:hover {
+  background: $accent-color;
 }
 
 .methods {
@@ -330,6 +344,9 @@ body {
     line-height: 30px;
     margin-top: 20px;
   }
+  @media (max-width: 640px) {
+    //text-align: justify;
+  }
 }
 
 .text-subtitle:first-letter {
@@ -363,6 +380,7 @@ body {
   @media (max-width: 992px) {
     font-size: 18px;
     line-height: 20px;
+    text-align: justify;
   }
 }
 
@@ -386,7 +404,6 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  //justify-content: center;
   border-radius: 30px;
   border: 2px $accent-color solid;
   padding: 40px 20px;
@@ -412,11 +429,11 @@ body {
   font-size: 18px;
   line-height: 20px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .city {
-  background-image: linear-gradient(rgba(139, 26, 26, 0.2), rgba(139, 26, 26, 0.2)),
-  url('../imgs/city.jpg');
+  background-image: url("../imgs/london.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -426,8 +443,8 @@ body {
 .city-container {
   font-family: "American Typewriter", sans-serif;
   width: 100%;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   padding: 0 10%;
   color: #ffffff;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
@@ -461,7 +478,6 @@ body {
   justify-content: center;
   align-items: stretch;
   gap: 20px;
-
   @media (max-width: 640px) {
     padding: 50px 0 50px;
     gap: 15px;
@@ -487,26 +503,25 @@ body {
 }
 
 .about_us-counter {
-  font-size: 48px;
+  font-size: 40px;
   color: $main-color;
   @media (max-width: 992px) {
-    font-size: 38px;
+    font-size: 36px;
   }
   @media (max-width: 640px) {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 
 .about_us-fact {
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
-  //color: $dark-color;
   margin-top: 30px;
   @media (max-width: 992px) {
-    font-size: 32px;
+    font-size: 22px;
   }
   @media (max-width: 640px) {
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 20px;
   }
 }
@@ -521,17 +536,13 @@ body {
 
 .contact-content {
   width: 50%;
-  //padding-right: 5%;
-  //padding-left: 12.5%;
   padding: 30px 5% 30px 12.5%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   @media (max-width: 1500px) {
     width: 750px;
   }
-
   @media (max-width: 1050px) {
     width: 100%;
     padding: 30px 10%;
@@ -588,8 +599,8 @@ body {
 }
 
 .contact-form button {
-  font-family: "DM Serif Display", serif;
-  width: 160px;
+  //font-family: "DM Serif Display", serif;
+  width: 180px;
   height: 50px;
   background: $second-color;
   color: $dark-color;
@@ -601,6 +612,12 @@ body {
   margin-top: 20px;
   cursor: pointer;
   text-align: center;
+  transition-duration: 0.5s;
+}
+
+.contact-form button:hover {
+  background: $accent-color;
+  color: white;
 }
 
 .static-submit-title {
@@ -667,7 +684,6 @@ body {
   bottom: 300px;
   left: 50%;
   margin-left: -175px;
-
   @media (max-width: 500px) {
     width: 80%;
     left: 10%;
@@ -677,11 +693,9 @@ body {
 
 .contact-img {
   width: 50%;
-
   @media (max-width: 1500px) {
     overflow: hidden;
   }
-
   @media (max-width: 1050px) {
     display: none;
   }
@@ -689,7 +703,6 @@ body {
 
 .contact-img img {
   width: 100%;
-
   @media (max-width: 1500px) {
     height: 100%;
     object-fit: cover;
@@ -698,11 +711,9 @@ body {
 
 .swiper1 {
   height: 848px;
-
   @media (max-width: 992px) {
     height: 500px;
   }
-
   @media (max-width: 500px) {
     height: 350px;
   }
@@ -712,13 +723,8 @@ body {
   width: 100%;
   height: 700px;
   background: #fff;
-
   @media (max-width: 992px) {
     height: 500px;
-  }
-
-  @media (max-width: 500px) {
-    //height: 350px;
   }
 }
 
@@ -746,14 +752,11 @@ body {
   font-size: 41px;
   font-weight: 300;
   color: #FFFFF0;
-  //margin-top: 50px;
   margin-left: 50px;
-
   @media (max-width: 992px) {
     font-size: 34px;
     max-width: 400px;
   }
-
   @media (max-width: 500px) {
     font-size: 28px;
   }
@@ -764,19 +767,11 @@ body {
   max-width: 800px;
   line-height: 1.2;
   color: #FFFFF0;
-  //margin-top: 50px;
-  //margin-left: 50px;
   margin: 50px;
-
-  @media (max-width: 1500px) {
-    //max-width: 600px;
-  }
-
   @media (max-width: 992px) {
     font-size: 18px;
     max-width: 400px;
   }
-
   @media (max-width: 500px) {
     margin: 30px;
   }
@@ -793,7 +788,7 @@ body {
 }
 
 .slide-3 {
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../imgs/island.jpg") center;
+  background: url("../imgs/island.jpg") center;
   background-size: cover;
 }
 
@@ -809,7 +804,6 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-
   @media (max-width: 992px) {
     top: 40%;
     gap: 10px;
@@ -828,12 +822,10 @@ body {
   line-height: 99px;
   color: $main-color;
   text-align: center;
-
   @media (max-width: 992px) {
     font-size: 40px;
     line-height: 50px;
   }
-
   @media (max-width: 500px) {
     font-size: 30px;
     line-height: 35px;
@@ -850,35 +842,10 @@ body {
   font-weight: 700;
   line-height: 60px;
   color: $main-color;
-
   @media (max-width: 992px) {
     font-size: 40px;
     line-height: 40px;
   }
-
-  @media (max-width: 500px) {
-    padding: 10px;
-    font-size: 20px;
-    line-height: 25px;
-  }
-}
-
-.swiper-line_game {
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 30px;
-  padding: 20px;
-  font-family: "DM Serif Display", serif;
-  text-transform: uppercase;
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 60px;
-  color: $main-color;
-
-  @media (max-width: 992px) {
-    font-size: 36px;
-    line-height: 40px;
-  }
-
   @media (max-width: 500px) {
     padding: 10px;
     font-size: 20px;
@@ -900,17 +867,20 @@ body {
   text-transform: uppercase;
   text-align: center;
   width: fit-content;
-
+  transition-duration: 0.5s;
   @media (max-width: 992px) {
     font-size: 20px;
     line-height: 22px;
   }
-
   @media (max-width: 500px) {
     padding: 10px 15px;
     font-size: 16px;
     line-height: 18px;
   }
+}
+
+.swiper-btn:hover {
+  background: $main-color;
 }
 
 .swiper-button-next,
@@ -934,7 +904,6 @@ body {
 
 footer {
   background: $second-color;
-  //margin-top: -2px;
 }
 
 .footer {
@@ -963,25 +932,29 @@ footer {
   font-size: 28px;
   font-weight: 600;
   line-height: 38px;
-  //color: #D7C69B;
+  transition-duration: 0.5s;
   @media (max-width: 500px) {
     font-size: 24px;
   }
 }
 
 .footer-list {
-  //font-family: Poppins, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  //color: #D7C69B;
   display: flex;
   flex-direction: column;
   gap: 8px;
   white-space: nowrap;
+  transition-duration: 0.5s;
   @media (max-width: 500px) {
     font-size: 14px;
   }
+}
+.footer-title:hover,
+.footer-list li:hover,
+.footer-contacts-item:hover{
+  color: $accent-color;
 }
 
 .footer-contacts {
@@ -994,10 +967,10 @@ footer {
   display: flex;
   align-items: center;
   gap: 24px;
-  //font-family: Poppins, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+  transition-duration: 0.5s;
   @media (max-width: 500px) {
     font-size: 14px;
     gap: 18px;
