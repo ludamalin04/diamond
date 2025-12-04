@@ -3,8 +3,6 @@ const name = document.getElementById('name');
 const errorName = document.querySelector('.error-name');
 const tel = document.getElementById('tel');
 const errorTel = document.querySelector('.error-tel');
-// const email = document.getElementById('email');
-// const errorEmail = document.querySelector('.error-email');
 const popup = document.querySelector('.contact-popup');
 
 
@@ -12,11 +10,6 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     validateInputs();
 })
-
-// const isValidEmail = (email) => {
-//     const req = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//     return req.test(String(email).toLowerCase());
-// }
 
 const isValidTel = (tel) => {
     const req = /^\+?[0-9\s\(\)-]+$/;
@@ -45,16 +38,6 @@ const validateInputs = () => {
         errorTel.style.visibility = 'hidden';
     }
 
-    // if (emailValue === '') {
-    //     errorEmail.textContent = 'Це поле необхідне для заповнення';
-    //     errorEmail.style.visibility = 'visible';
-    // } else if (!isValidEmail(emailValue)) {
-    //     errorEmail.textContent = 'Перевірте правильність електронної пошти';
-    //     errorEmail.style.visibility = 'visible';
-    // } else {
-    //     errorEmail.style.visibility = 'hidden';
-    // }
-
     if (nameValue !== '' && telValue !== '' && isValidTel(telValue)) {
         send();
     }
@@ -71,17 +54,17 @@ burger.addEventListener('click', () => {
     console.log('hellomain')
 })
 
-
-
 function send() {
     let formData = new FormData(form);
+    console.log(formData);
     let btnSubmitTitle = document.querySelector('#form [type="submit"]');
+    let formVersion = document.querySelector("fieldset.hidden-fields-container").querySelector('input[name="_wpcf7"]').value;
     if (btnSubmitTitle) {
         btnSubmitTitle.children[0].classList.toggle('active');
         btnSubmitTitle.children[1].classList.toggle('active');
     }
 
-    fetch('sendmail.php', {
+    fetch('https://diamondenglishhome.com/wp-json/contact-form-7/v1/contact-forms/' + formVersion + '/feedback', {
         method: 'POST',
         body: formData
     }).then(

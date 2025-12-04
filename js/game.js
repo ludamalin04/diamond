@@ -13,7 +13,6 @@ gameBurger.addEventListener('click', () => {
 
 const faqQuestion = document.querySelectorAll('.faq-question');
 const faqAnswer = document.querySelectorAll('.faq-answer');
-// const faqImg = document.querySelector('.faq-img img');
 
 faqQuestion.forEach((item) => {
     item.addEventListener('click', () => {

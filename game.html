@@ -4,14 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
-    <title>DiamonDIsland</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>DiamonD Island</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/reset.css">
@@ -37,9 +31,9 @@
             <li class="header-item"><a href="./index.html">школа</a></li>
         </ul>
         <div class="header-action">
-            <a class="header-call" href="tel:+380678318508">
+            <a class="header-call" href="tel:+380671119755">
                 <img src="imgs/call.png" alt="call">
-                <p>Подзвони сьогодні! <br>+380678318508</p>
+                <p>Подзвонити <br>+380671119755</p>
             </a>
         </div>
         <button class="header-burger">
@@ -103,7 +97,8 @@
             <p class="price-subtitle">Обери карту — і дозволь собі побачити більше.
                 Твоя свідомість тримає тебе в звичних рамках, підсвідоме підкаже тобі як вийти за їх межі.
                 Дозволь образам говорити, а собі — слухати.</p>
-            <a class="price-tag" target="_blank" href="https://docs.google.com/forms/d/1IIdFELh-eNJLfZYCtTDL4ScPlhnBGcBMSP7fZ2SnyUU/edit?chromeless=1">зареєструватися на гру</a>
+            <a class="price-tag" href="#game-form">зареєструватися
+                на гру</a>
             <p class="price-subtitle">Один сеанс, що може змінити погляд на ситуацію або навіть на себе.</p>
         </div>
     </section>
@@ -186,6 +181,35 @@
             <div class="faq-img"></div>
         </div>
     </section>
+
+    <section class="contact">
+        <div class="contact-content">
+            <h3 class="contact-title">Зареєструватися на гру</h3>
+            <form class="contact-form" id="game-form">
+                <fieldset class="hidden-fields-container"><input type="hidden" name="_wpcf7" value="60"><input type="hidden"
+                                                                                                               name="_wpcf7_version"
+                                                                                                               value="6.1.1"><input
+                        type="hidden" name="_wpcf7_locale" value="en_US"><input type="hidden" name="_wpcf7_unit_tag"
+                                                                                value="wpcf7-f60-p10-o1"><input type="hidden"
+                                                                                                                name="_wpcf7_container_post"
+                                                                                                                value="10"><input
+                        type="hidden" name="_wpcf7_posted_data_hash" value="29f867ba4f2a91530ba09d18fb58c6e3">
+                </fieldset>
+                <input id="name" data-name="your-name" type="text" name="your-name" placeholder="Ім'я*">
+                <p class="error error-name">error</p>
+                <input id="tel" data-name="tel-85" type="tel" name="tel-85" placeholder="Номер телефону*">
+                <p class="error error-tel">error</p>
+                <textarea name="your-message" data-name="your-message"
+                          placeholder="Додаткові питання"></textarea>
+                <button type="submit">
+                    <span class="static-submit-title active">Зареєструватися</span>
+                    <span class="loader">Відправка</span>
+                </button>
+            </form>
+        </div>
+        <!--        <div class="contact-img"><img src="imgs/students-2.jpg" alt="contact"></div>-->
+        <div class="contact-popup">Дякуємо за надісланий запит</div>
+    </section>
 </main>
 <footer>
     <div class="footer">
@@ -200,26 +224,25 @@
         </div>
         <div class="footer-contacts" id="contacts">
             <div class="footer-social">
-                <img src="imgs/facebook.png" alt="facebook">
-                <img src="imgs/instagram.png" alt="instagram">
+                <a href="https://www.facebook.com/DiamonDEnglishHome" target="_blank"><img src="imgs/facebook.png"
+                                                                                           alt="facebook"></a>
+                <a href="https://www.instagram.com/oksanahordiievska/" target="_blank"><img src="imgs/instagram.png"
+                                                                                            alt="instagram"></a>
             </div>
             <div class="footer-contacts-item">
                 <img class="footer-icon" src="imgs/mail.png" alt="contacts">
-                <a href="mailto:oksanapeliak2015@gmail.com">oksanapeliak2015@gmail.com</a>
+                <a href="mailto:oksana@diamondenglishhome.com">oksana@diamondenglishhome.com</a>
             </div>
             <div class="footer-contacts-item">
                 <img class="footer-icon" src="imgs/phone.png" alt="contacts">
-                <a href="tel:+380678318508">+380678318508</a>
+                <a href="tel:+380671119755">+380671119755</a>
             </div>
         </div>
     </div>
-    <div class="footer-copyright">
-        <a target="_blank" href="https://t.me/starmax_webstudio">Розробка сайту
-            STARMAX Web Studio</a> |
-        All Rights Reserved
-    </div>
 </footer>
-<script src="js/game.js"></script>
-<script src="js/swiper-bundle.min.js"></script>
 </body>
 </html>
+
+<script src="js/common.js"></script>
+<script src="js/game.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
